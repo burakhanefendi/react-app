@@ -3,7 +3,6 @@ import { Col, Button, Form, FormGroup, Label, Input, Alert } from 'reactstrap';
 import axios from "axios/index";
 import {API_URL} from "../../constants";
 import { buildChoices } from '../utils';
-
 import './question-form.css';
 
 class QuestionForm extends Component {
@@ -31,11 +30,7 @@ class QuestionForm extends Component {
 
 
     handleSubmit(event) {
-
-
         const choises = buildChoices(this.state.choices);
-        console.log(this.state.choices);
-        // const choisesObject='{"question": "'+ this.state.namequestion +'", "choices": '+ choises + '}';
         const choisesObject = {
             'question': this.state.namequestion,
             'choices': choises
@@ -62,7 +57,6 @@ class QuestionForm extends Component {
         event.preventDefault();
     }
 
-
     render() {
         return (
             <Form onSubmit={this.handleSubmit}  >
@@ -82,12 +76,12 @@ class QuestionForm extends Component {
                 <FormGroup row>
                     <Label for="choiseslist" sm={2}>Text Area</Label>
                     <Col sm={10}>
-                        <Input type="textarea" name="text" id="choiseslist" placeholder="Please list the choices follow by a coma. Example: A, B, C, D" value={this.state.choices} onChange={this.handleChangeChoises}/>
+                        <Input type="textarea" name="text" id="choiseslist" placeholder="Please list the choices. Example: A, B, C, D" value={this.state.choices} onChange={this.handleChangeChoises}/>
                     </Col>
                 </FormGroup>
                 <FormGroup check row>
                     <Col sm={{ size: 10, offset: 2 }}>
-                        <Button>Submit</Button>
+                        <Button className="add-question-btn">Submit</Button>
                     </Col>
                 </FormGroup>
             </Form>

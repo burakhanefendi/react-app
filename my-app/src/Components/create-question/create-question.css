@@ -1,12 +1,8 @@
-.App-header {
-  background-color: #222;
-  height: 150px;
-  color: white;
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.5em;
-  padding-left: 1.5em;
+.add-question-btn {
+  background-color: #c01f54 !important;
+  border-color: #c01f54 !important;
 }
-.App-title {
-  font-size: 1.5em;
+.add-question-btn:focus {
+  border-color: #c01f54 !important;
+  box-shadow: 0 0 0 0.25rem #c01f54;
 }

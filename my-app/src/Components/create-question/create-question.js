@@ -17,7 +17,7 @@ class CreateQuestion extends Component {
     render() {
         return (
             <div>
-                <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Add Question</Button>
+                <Button className="add-question-btn" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Add Question</Button>
                 <Collapse isOpen={this.state.collapse}>
                     <Card>
                         <CardBody>

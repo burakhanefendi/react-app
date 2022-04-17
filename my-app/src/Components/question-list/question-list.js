@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Row,Container } from 'reactstrap';
 import axios from 'axios';
-
 import { API_URL } from '../../constants';
 import Question from "../question/question";
 import HeaderTitle from "../headertitle/headertitle";

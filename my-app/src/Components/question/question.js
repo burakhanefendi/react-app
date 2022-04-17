@@ -9,12 +9,14 @@ class Question extends Component {
 
     render() {
         return (
-          <Col className="question" xs="6" sm="3">
-          <Link to={this.props.questionData.url}>
-              <h4><strong>{this.props.questionData.question}</strong></h4>
-              <p><strong>published at</strong>: { dateTimeFormatter(this.props.questionData.published_at) }</p>
-              <p><strong>#choises</strong>: {this.props.questionData.choices.length}</p>
-          </Link>
+          <Col xs="6" sm="3">
+              <div className="question">
+                  <Link to={this.props.questionData.url}>
+                      <h5 className="question-title">{this.props.questionData.question}</h5>
+                      <p><strong>published at</strong>: { dateTimeFormatter(this.props.questionData.published_at) }</p>
+                      <p><strong>#choises</strong>: {this.props.questionData.choices.length}</p>
+                  </Link>
+              </div>
         </Col>
         );
     }

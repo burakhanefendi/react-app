@@ -1,0 +1,23 @@
+.question {
+    text-align: left;
+}
+.App-intro .row a {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.App-intro .row a:hover {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-decoration: none;
+}
+.App-intro h4 {
+
+}
+.App-intro p {
+    font-size: 0.9em;
+    color: #222222;
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+

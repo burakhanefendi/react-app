@@ -1,0 +1,10 @@
+.questionsdetail span {
+    width: 30%;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+.questionsdetail button {
+    margin: 1px;
+}
+

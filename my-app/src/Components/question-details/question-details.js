@@ -39,7 +39,7 @@ class QuestionDetails extends Component {
                     });
                     setTimeout(function() {
                         window.location.href = "/";
-                    }, 3000);
+                    }, 1000);
 
                 })
                 .catch(error => {

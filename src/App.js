@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container } from 'reactstrap';
 import {
     BrowserRouter,
@@ -9,8 +9,7 @@ import './App.css';
 import QuestionList from "./Components/question-list/question-list";
 import QuestionDetails from "./Components/question-details/question-details";
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
         <div className="App">
           <Container>
@@ -23,7 +22,6 @@ class App extends Component {
           </Container>
         </div>
     );
-  }
 }
 
 export default App;

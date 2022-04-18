@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
-import { Col, Button, Form, FormGroup, Label, Input, Alert } from 'reactstrap';
+import {
+    Col,
+    Button,
+    Form,
+    FormGroup,
+    Label,
+    Input,
+    Alert
+} from 'reactstrap';
 import axios from "axios/index";
 import {API_URL} from "../../constants";
 import { buildChoices } from '../utils';

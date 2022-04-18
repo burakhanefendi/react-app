@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
-import {BrowserRouter, Switch, Route,} from 'react-router-dom';
+import {
+    BrowserRouter,
+    Switch,
+    Route,
+} from 'react-router-dom';
 import './App.css';
-
 import QuestionList from "./Components/question-list/question-list";
 import QuestionDetails from "./Components/question-details/question-details";
 

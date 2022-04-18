@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
-import './create-question.css';
+import {
+    Collapse,
+    Button,
+    CardBody,
+    Card
+} from 'reactstrap';
 import QuestionForm from "../question-form/question-form";
+import './create-question.css';
 
 class CreateQuestion extends Component {
     constructor(props) {

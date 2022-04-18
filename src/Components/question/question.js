@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Col } from 'reactstrap';
 import { dateTimeFormatter } from '../utils';
-
 import './question.css';
 
 class Question extends Component {

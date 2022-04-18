@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
-import { Button, ListGroup, Alert, Progress }  from 'reactstrap';
+import {
+    Button,
+    ListGroup,
+    Alert,
+    Progress
+}  from 'reactstrap';
 import axios from 'axios';
-import { calculatePercent, totalVotes, choiceNumber } from '../utils';
+import {
+    calculatePercent,
+    totalVotes,
+    choiceNumber } from '../utils';
 import HeaderTitle from "../headertitle/headertitle";
 import { API_URL } from '../../constants';
 import './question-details.css';
